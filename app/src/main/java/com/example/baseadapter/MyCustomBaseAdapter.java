@@ -21,22 +21,18 @@ public class MyCustomBaseAdapter extends BaseAdapter {
         this.bike = bike;
         this.bikeimg = bikeimg;
     }
-
     @Override
     public int getCount() {
         return bike.length;
     }
-
     @Override
     public Object getItem(int i) {
         return bikeimg.length;
     }
-
     @Override
     public long getItemId(int i) {
         return 0;
     }
-
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         LayoutInflater layoutInflater=(LayoutInflater)context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
@@ -44,6 +40,7 @@ public class MyCustomBaseAdapter extends BaseAdapter {
 
         imageView=(ImageView)view.findViewById(R.id.imageview);
         textView=(TextView) view.findViewById(R.id.textview);
+
 
         imageView.setImageResource((bikeimg[i]));
         textView.setText(bike[i]);

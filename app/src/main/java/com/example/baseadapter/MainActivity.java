@@ -23,5 +23,7 @@ public class MainActivity extends AppCompatActivity {
         gridView=findViewById(R.id.gridview);
         gridView.setAdapter(myCustomBaseAdapter);
 
+
+
     }
 }
